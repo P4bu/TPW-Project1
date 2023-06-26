@@ -1,0 +1,61 @@
+
+
+<div class="container">
+  <div class="card1">
+    <div class="content">
+      <div class="front">
+        <img [src]="pokemon.sprites.other.dream_world.front_default">
+      </div>
+      <div class="back">
+        <p>{{pokemon.name}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card2">
+    <div class="content">
+      <div class="front" style="background-color: #03446A; color:white;">
+        <p>Elemento
+      </div>
+      <div class="back" style="background-color: white; color:#03446A;">
+        <p>{{pokemon.types[0].type.name}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card3">
+    <div class="content">
+      <div class="front" style="background-color: #03446A; color:white;">
+        <p> Habilidad
+      </div>
+      <div class="back" style="background-color: white; color:#03446A;">
+        <p>{{pokemon.abilities[1].ability.name}}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card4">
+    <div class="content">
+      <div class="front">
+        <p>Peso
+      </div>
+      <div class="back">
+        <p>{{pokemon.weight}}Kg
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card5">
+    <div class="content">
+      <div class="front">
+        <p>Shiny
+      </div>
+      <div class="back">
+        <img [src]="pokemon.sprites.other['official-artwork'].front_shiny">
+    </div>
+  </div>
+</div>

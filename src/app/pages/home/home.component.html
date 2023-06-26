@@ -1,0 +1,42 @@
+<div class=" container mt-3 presentacion">
+    <div class="div-contenido" style=" padding-top: 30px;">
+      <div style="padding:30px;">
+        <br>
+        <h1>Bienvenido Maestro Pokemon</h1>
+        <h3>Vamos a Conseguir Pokemon, Todos nuestros Amigos aquí. Explora ahora.</h3>
+        
+        <form class="d-flex mt-5" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-success text-white" type="submit">Buscar</button>
+        </form>
+      </div>
+</div>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, maximum-scale=1.0">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title"></h1>
+    <div class="container" style="overflow: auto;">
+        <div class="col-12 d-flex" style="padding-top: 50px;">
+            <div class="row; d-flex">
+                <div (click)="clickMovie(pokes.url)" *ngFor="let pokes of movies; let i = index" style="cursor:pointer;">
+                    <div class="card" >
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{i+1}}.svg">
+                        <br>
+                        <h4>{{pokes.name}}</h4>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
